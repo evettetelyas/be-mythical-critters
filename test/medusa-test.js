@@ -52,7 +52,7 @@ describe('Medusa', function() {
     assert.equal(medusa.statues.length, 3);
   });
 
-  it.skip('should unstone the the first victim and stone the 4th coming in', function() {
+  it('should unstone the the first victim and stone the 4th coming in', function() {
     var medusa = new Medusa('Meeka');
     var victim1 = new Person('Lousia');
     var victim2 = new Person('Bree');
