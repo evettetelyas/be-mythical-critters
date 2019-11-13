@@ -54,11 +54,11 @@ class Centaur {
 	}
 
 	drinkPotion() {
-		if (this.standing == true) {
-			this.cranky = false;
-			this.rested = false;
+		if (this.standing) {
+			this.cranky = !this.cranky;
+			this.rested = !this.rested;
 		}
-		if (this.rested == true) {
+		if (this.standing && this.rested) {
 			this.cranky = true;
 		}
 		return 'Not while I\'m laying down!'
