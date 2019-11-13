@@ -11,7 +11,7 @@ class Centaur {
 	
 	incrementCrank() {
 		this.crankCount ++
-		if (this.crankCount == 3) {
+		if (this.crankCount % 3 == 0 && this.crankCount != 0) {
 			this.cranky = true;
 		}
 	}
