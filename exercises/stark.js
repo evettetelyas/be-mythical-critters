@@ -6,7 +6,7 @@ class Stark {
 	}
 
 	houseWords() {
-		if (this.safe == true) {
+		if (this.safe) {
 			return "The North Remembers"
 		} else {
 			return "Winter is Coming"

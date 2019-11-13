@@ -7,7 +7,7 @@ class Ogre {
 
 	encounter(human) {
 		human.encounterCounter ++
-		if (human.noticesOgre() == true) {
+		if (human.noticesOgre()) {
 			this.swingAt(human)
 			if (this.swings % 2 == 0 && this.swings != 0 ) {
 				human.knockedOut = true;

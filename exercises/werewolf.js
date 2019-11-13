@@ -14,7 +14,7 @@ class Werewolf {
 	}
 
 	eat(victim) {
-		if (this.hungry == false) {
+		if (!this.hungry) {
 			var str = 'I cannot eat because I am not hungry.'
 			return str
 		} else {
